@@ -380,6 +380,7 @@ width: 100%;
 }
 
 footer { 
+  margin: 10%;
   color: aliceblue;
   font-size: 3rem;
 }
