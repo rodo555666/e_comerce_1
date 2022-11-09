@@ -41,20 +41,20 @@ body {
     --width-carta: auto;
     --margin-inline: 10%;
     --card-height: 250px;
-    --font-size-stock: 2rem;
-    --font-size-name: 2rem;
+    --font-size-stock: 1rem;
+    --font-size-name: 1rem;
 
    }
   }
 
-  @media ( max-width: 950px) {
+  @media ( max-width: 800px) {
     :root { 
  
-     --card-color_b: red ;
+     --card-color_b: rgb(0, 255, 4) ;
     
-     --width-carta: auto;
+     --width-carta: 100%;
      --margin-inline: 10%;
-     --card-height: 500px;
+     --card-height: 250px;
      --font-size-stock: 3rem;
      --font-size-name: 4rem;
 
@@ -178,7 +178,7 @@ body {
     align-items: center;
     place-content: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: max-content 1fr 1fr;
+    grid-template-rows: 1fr max-content max-content;
     margin-top: 15%;
     margin-bottom: auto;
     margin-inline: var(--margin-inline);
@@ -194,7 +194,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: max-content;
+    height: auto;
     width: auto;
     
     background-color: rgb(235, 229, 235);
