@@ -76,6 +76,8 @@ comprar.addEventListener("click",function (e) {
     document.getElementById('scroll_p').innerHTML = "";
       window.alert("gracias por su compra")
       document.getElementById('total').innerHTML = ""
+      num.textContent = ""
+      s = 0
   }
 
 })
