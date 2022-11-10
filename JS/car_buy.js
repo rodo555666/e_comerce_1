@@ -20,7 +20,8 @@ id: "A1",
 name: "playera",
 price: 450,
 img:"img/featured1.png",
-stock: 5
+stock: 5,
+compras: 0
 },
 
  { 
@@ -28,7 +29,8 @@ stock: 5
   name: "buso",
   price: 500,
   img:"img/featured2.png",
-  stock: 4
+  stock: 4,
+  compras: 0
   },
   
 
@@ -37,7 +39,8 @@ stock: 5
   name: "campera",
   price: 550,
   img:"img/featured3.png",
-  stock: 3
+  stock: 3,
+  compras: 0
   }
   ]
 
@@ -89,13 +92,15 @@ AddCar.addEventListener("click", function (e) {
    /*cart.push(pcto[i]);*/
  i= e.target.dataset.prod 
  stocker = pcto[i].stock 
+ 
 if (e.target.classList.contains("add") && pcto[i].stock > 0) { 
   
   s ++
 
  
-  document.querySelector("#card").getAttribute("precio")
+  /*document.querySelector("#card").getAttribute("precio")*/
   pcto[i].stock -= 1
+ 
   precio += pcto[i].price
   
     for (let index = 0; index < conpro.length; index++) {
@@ -104,17 +109,10 @@ if (e.target.classList.contains("add") && pcto[i].stock > 0) {
       document.getElementById('scroll_p').innerHTML += ` <div id="agregado">
   <p class="carn"> ${pcto[i].name} </p> 
   <p class="carp" > $  ${pcto[i].price} </p>
-  <p class="cantidad" > ${pcto[i].stock +1} </p>
   <img class="carimg" src="${pcto[i].img} " alt="producto">  
    </div> `;}
       
     }
-
-  
-  
-   
-
-
    /*<button class="restar_compra">-</button>
   <button class="sumar_compra">+</button> */
 console.log(i)
