@@ -40,10 +40,10 @@ body {
 
     --card-color_b: rgb(175, 37, 131) ;
     
-    --width-carta: 50vh;
+    --width-carta: 100%;
     --margin-inline: 20%;
     --card-height: 250px;
-    --font-size-stock: 1rem;
+    --font-size-stock: .5rem;
     --font-size-name: 1.5rem;
     --font-size-nav: .8rem;
     --boton-add: 10vh;
