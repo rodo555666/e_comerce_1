@@ -99,8 +99,11 @@ if (e.target.classList.contains("add") && pcto[i].stock > 0) {
   <p class="carn"> ${pcto[i].name} </p> 
   <p class="carp" > $  ${pcto[i].price} </p>
   <img class="carimg" src="${pcto[i].img} " alt="producto">  
-  <button class="restar_compra">-</button>
-  <button class="sumar_compra">+</button>  </div> `;
+   </div> `;
+
+
+   /*<button class="restar_compra">-</button>
+  <button class="sumar_compra">+</button> */
 console.log(i)
 
  num.textContent = (s)
