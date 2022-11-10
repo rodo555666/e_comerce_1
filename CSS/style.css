@@ -35,7 +35,7 @@ body {
     color: black;
 }
 
-@media ( max-width: 450px) {
+@media ( max-width: 480px) {
    :root { 
 
     --card-color_b: rgb(32, 45, 147) ;
@@ -46,13 +46,13 @@ body {
     --font-size-stock: 1rem;
     --font-size-name: 1.5rem;
     --font-size-nav: .8rem;
-    --boton-add: 5vh;
+    --boton-add: 10vh;
     --gap:1rem;
 
    }
   }
 
-  @media (max-width: 900px) and (min-width: 460px) {
+  @media (max-width: 900px) and (min-width: 500px) {
     :root { 
  
      --card-color_b: rgb(32, 45, 147) ;
