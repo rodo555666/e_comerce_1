@@ -40,8 +40,8 @@ body {
 
     --card-color_b: rgb(175, 37, 131) ;
     
-    --width-carta: 100%;
-    --margin-inline: 20%;
+    --width-carta: 90%;
+    --margin-inline: 10%;
     --card-height: 250px;
     --font-size-stock: .5rem;
     --font-size-name: 1.5rem;
