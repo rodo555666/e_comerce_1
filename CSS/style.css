@@ -1,14 +1,14 @@
 
 :root {
     --background-color:rgb(32, 38, 50) ;
-    --card-color_b:rgb(19, 77, 138) ;
+    --card-color_b:rgb(116, 140, 163) ;
     --card-stock-color_c:rgb(32, 45, 147) ;
     --card-stock-color_d:rgb(33, 53, 205) ;
-    --botton-color: rgb(35, 129, 236) ;
+    --botton-color: rgb(88, 142, 203) ;
     --botton-comprar:rgb(35, 129, 236) ;
         /* compras */
         --compras-background:rgb(32, 45, 147) ;
-        --card-productos-color:rgb(33, 53, 205) ;
+        --card-productos-color:rgb(190, 192, 209) ;
     --comprar: none;
     /* === card ===*/
   
@@ -16,8 +16,10 @@
     --margin-inline: auto;
     --card-height: 250px;
     --font-size-stock: 2rem;
-    --font-size-name: 3rem;
-    --font-size-nav: 2rem;
+    --font-size-name: 2rem;
+    --font-size-nav: 1rem;
+    --boton-add: 10vh;
+    --gap:1rem;
 
 }
 
@@ -27,7 +29,7 @@
 body {
     font-family: 'Inter', sans-serif;;
 
-    background-color: rgb(53, 10, 57);
+    background-color: rgb(200, 197, 200);
     margin: auto;
     padding: auto;
     color: black;
@@ -39,25 +41,30 @@ body {
     --card-color_b: red ;
    
     --width-carta: auto;
-    --margin-inline: 10%;
+    --margin-inline: 20%;
     --card-height: 250px;
     --font-size-stock: 1rem;
-    --font-size-name: 1rem;
+    --font-size-name: 1.5rem;
+    --font-size-nav: .8rem;
+    --boton-add: 5vh;
+    --gap:1rem;
 
    }
   }
 
-  @media ( max-width: 800px) {
+  @media (max-width: 900px) and (min-width: 460px) {
     :root { 
  
      --card-color_b: rgb(0, 255, 4) ;
     
-     --width-carta: 100%;
+     --width-carta: 80%;
      --margin-inline: 10%;
-     --card-height: 250px;
+     --card-height: 500px;
      --font-size-stock: 3rem;
-     --font-size-name: 4rem;
-
+     --font-size-name: 3rem;
+     --font-size-nav: 2rem;
+     --boton-add: 8vh;
+     --gap:1rem;
     }
    }
 
@@ -77,6 +84,7 @@ body {
    grid-template-rows: 1fr;
    grid-template-columns: max-content max-content 1fr 1fr 1fr;
    gap: 2vh;
+   column-gap: 2vh;
 
    margin: auto;
    padding: auto;
@@ -87,9 +95,15 @@ body {
   #nav img {
     height: 50%;
     width: auto;
-    margin: auto;
+    margin-left: 50%;
+  
     padding: auto;
   }
+  #nav h1 {
+    margin-left: 50%;
+  } 
+
+
 
 .cimg { 
     
@@ -161,7 +175,7 @@ body {
 
 #pro { 
     margin-top: 20%;
-    margin-inline: auto;
+    margin-inline: var(--margin-inline);
     margin-bottom: 20%;
     padding: auto;
     height: auto;
@@ -178,10 +192,11 @@ body {
     align-items: center;
     place-content: center;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr max-content max-content;
+    grid-template-rows: max-content 1fr 1fr;
+    gap: var(--gap);
     margin-top: 15%;
     margin-bottom: auto;
-    margin-inline: var(--margin-inline);
+    margin-inline: auto;
     height: auto;
     width: var(--width-carta); 
     background-color:var(--card-color_b) ;
@@ -256,14 +271,15 @@ padding: auto;
     grid-row: 3;
     font-weight: 600;
     font-size: 3rem;
-    height: 10vh;
-    width: 10vh;
+    height:var(--boton-add);
+    width: var(--boton-add);
     border-radius: 50%;
  
-  margin-left: 40%;
- margin-right: 10%;
- margin-bottom: 10%;
- margin-top: 5%;
+  /*margin-left: 40%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  margin-top: 5%;*/
+  margin: auto;
 }
 
 /*== buuton ==*/
