@@ -104,6 +104,7 @@ if (e.target.classList.contains("add") && pcto[i].stock > 0) {
       document.getElementById('scroll_p').innerHTML += ` <div id="agregado">
   <p class="carn"> ${pcto[i].name} </p> 
   <p class="carp" > $  ${pcto[i].price} </p>
+  <p class="cantidad" > ${pcto[i].stock +1} </p>
   <img class="carimg" src="${pcto[i].img} " alt="producto">  
    </div> `;}
       

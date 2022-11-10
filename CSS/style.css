@@ -358,7 +358,7 @@ color: rgb(230, 225, 225);
   
   height: 50vh;
   width: 40vh;
-  overflow: scroll;
+  overflow: auto;
 }
 
 
@@ -424,7 +424,15 @@ color: rgb(230, 225, 225);
   width: auto;
 }
 
-.restar_compra {
+.cantidad { 
+  grid-column: 1;
+  grid-row: 3;
+  color: azure;
+}
+
+
+
+/*.restar_compra {
   background-color: cadetblue;
  
   border: none;
@@ -448,7 +456,7 @@ color: rgb(230, 225, 225);
   margin: 15%;
   height: auto;
   width: auto;
-}
+}*/
 
 footer { 
   display: flex;
