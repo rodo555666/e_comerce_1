@@ -61,7 +61,7 @@ desplegar.addEventListener("click",function desplegar_carrito (e) {
   
         if (e.target.classList.contains("boton_carrito") && despcont == 1 ) {
          despcont = 0
-          root.style.setProperty('--comprar', 'flex');
+          root.style.setProperty('--comprar', 'grid');
           root.style.setProperty('--botton-comprar', 'green');
         } else if (despcont !== 1) {
           root.style.setProperty('--comprar', 'none');
