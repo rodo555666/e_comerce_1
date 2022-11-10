@@ -8,7 +8,7 @@ const num = document.getElementById("carrito")
 const buttom = document.getElementsByClassName("add")
 const comprar = document.getElementById("comprar")
 const desplegar = document.getElementById("nav")
-const root = document.querySelector(':root');
+const root = document.querySelector(':root')
 const sto = document.getElementById("stock")
 
 
@@ -50,7 +50,8 @@ let i = 0
 let precio = 0
 let cont = 0
 let despcont = 1
-
+let conpro = [0]
+let stocker = 0
 
 
 desplegar.addEventListener("click",function desplegar_carrito (e) {
@@ -87,19 +88,30 @@ AddCar.addEventListener("click", function (e) {
 
    /*cart.push(pcto[i]);*/
  i= e.target.dataset.prod 
+ stocker = pcto[i].stock 
 if (e.target.classList.contains("add") && pcto[i].stock > 0) { 
   
   s ++
 
-  document.querySelector("#card").getAttribute("precio")
  
-    pcto[i].stock -= 1
-    precio += pcto[i].price
-    document.getElementById('scroll_p').innerHTML += ` <div id="agregado">
+  document.querySelector("#card").getAttribute("precio")
+  pcto[i].stock -= 1
+  precio += pcto[i].price
+  
+    for (let index = 0; index < conpro.length; index++) {
+     if (conpro.includes(i) ) { e.target.textContent = (pcto[i].stock)
+     } else { conpro.push(i) 
+      document.getElementById('scroll_p').innerHTML += ` <div id="agregado">
   <p class="carn"> ${pcto[i].name} </p> 
   <p class="carp" > $  ${pcto[i].price} </p>
   <img class="carimg" src="${pcto[i].img} " alt="producto">  
-   </div> `;
+   </div> `;}
+      
+    }
+
+  
+  
+   
 
 
    /*<button class="restar_compra">-</button>
@@ -115,7 +127,7 @@ console.log(i)
 } )
 
 
-pcar.addEventListener("click", function(e) {  sto.textContent = (pcto[i].stock)})
+sto.addEventListener("click", function(e) { e.target.textContent = (pcto[i].stock) })
 
 /*function prueba () {
    document.body.style.backgroundColor = "red"
