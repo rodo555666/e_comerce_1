@@ -35,12 +35,12 @@ body {
     color: black;
 }
 
-@media (max-width: 800px) and ( max-width: 480px) {
+@media   ( max-width: 480px) {
    :root { 
 
-    --card-color_b: rgb(32, 45, 147) ;
+    --card-color_b: rgb(175, 37, 131) ;
     
-    --width-carta: auto;
+    --width-carta: 50vh;
     --margin-inline: 20%;
     --card-height: 250px;
     --font-size-stock: 1rem;
