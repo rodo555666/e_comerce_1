@@ -65,7 +65,7 @@ desplegar.addEventListener("click",function desplegar_carrito (e) {
           root.style.setProperty('--botton-comprar', 'green');
         } else if (despcont !== 1) {
           root.style.setProperty('--comprar', 'none');
-          root.style.setProperty('--botton-comprar', 'blue');
+          root.style.setProperty('--botton-comprar', 'pink');
           despcont = 1
         } 
   

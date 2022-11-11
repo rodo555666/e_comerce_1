@@ -1,11 +1,11 @@
 
 :root {
     --background-color:rgb(32, 38, 50) ;
-    --card-color_b:rgb(36, 52, 172) ;
-    --card-stock-color_c:rgb(32, 45, 147) ;
-    --card-stock-color_d:rgb(33, 53, 205) ;
-    --botton-color: rgb(88, 142, 203) ;
-    --botton-comprar:rgb(35, 129, 236) ;
+    --card-color_b:rgb(209, 53, 105) ;
+    --card-stock-color_c:rgb(78, 41, 123) ;
+    --card-stock-color_d:rgb(229, 106, 149) ;
+    --botton-color: rgb(182, 104, 182) ;
+    --botton-comprar:rgb(156, 187, 221) ;
         /* compras */
         --compras-background:rgb(51, 51, 54) ;
         --card-productos-color:rgb(190, 192, 209) ;
@@ -29,7 +29,7 @@
 body {
     font-family: 'Inter', sans-serif;;
 
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(227, 199, 224);
     margin: auto;
     padding: auto;
     color: black;
@@ -55,7 +55,7 @@ body {
   @media (max-width: 900px) and (min-width: 500px) {
     :root { 
  
-     --card-color_b: rgb(32, 45, 147) ;
+     --card-color_b: rgb(147, 32, 109) ;
     
      --width-carta: 80%;
      --margin-inline: 10%;
@@ -91,7 +91,7 @@ body {
     height: auto;
     width: 100%;
     background-color: rgb(250, 250, 250);
-    border-bottom: 4px solid rgb(40, 27, 235);
+    border-bottom: 4px solid rgb(214, 105, 156);
   }
   #nav img {
     height: 50%;
@@ -445,7 +445,7 @@ color: rgb(230, 225, 225);
   font-weight: 600;
   font-size: 2rem;
   color: rgb(243, 246, 246);
-  background-color: rgb(31, 235, 82);
+  background-color: rgb(170, 42, 91);
   grid-row: 2;
   grid-column: 1;
   margin-top: 100%;
